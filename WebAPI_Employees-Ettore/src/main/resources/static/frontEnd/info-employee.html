@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Employee List</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="opera.css">	
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+</head>
+
+<body ng-app="Modulo" ng-controller="MainController">
+
+
+	<div ng-init="test()" style="margin-left: auto; margin-right: auto;">
+		<table border="2" style="margin-left: auto; margin-right: auto;">
+			<h1 style="text-align: center;">EMPLOYEE LIST</h1>
+			<hr>
+			<th>ID</th>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>Email</th>
+<!-- 			<th>Actions</th> -->
+			<tr>
+				<td ng-bind="employee.id"></td>
+				<td ng-bind="employee.firstName"></td>
+				<td ng-bind="employee.lastName"></td>
+				<td ng-bind="employee.email"></td>
+<!-- 				<td align="center"><button -->
+<!-- 						class="btn btn-warning employee_test_btn" ng-click="test()">TEST</button></td> -->
+			</tr>
+		</table>
+		<hr>
+		<div style="text-align: center;">
+			<a href="#" onclick="location.href='http://localhost:8080/frontEnd/index.html';">
+					<button class="btn btn-primary">Go to Employee list</button>
+				</a>
+		</div>
+	</div>
+	
+</body>
+
+</html>
